@@ -19,7 +19,7 @@ Add your secrets file. Rename secrets-sample.php and add your settings:
 url is something like:
 
 ```
-    'url' => 'https://www.dev-CUSTOMER.acsitefactory.com/api/v1/sites/',
+'url' => 'https://www.dev-CUSTOMER.acsitefactory.com/api/v1/sites/',
 ```
 
 **Running queries against ACSF (get list of users and their roles)**
