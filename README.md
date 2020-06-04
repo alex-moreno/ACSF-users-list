@@ -1,7 +1,9 @@
 
-**INSTALLATION**
+**Installation**
 
 ```
+git clone git@github.com:alex-moreno/ACSF.git
+cd ACSF
 composer install
 ```
 
@@ -20,7 +22,7 @@ url is something like:
     'url' => 'https://www.dev-CUSTOMER.acsitefactory.com/api/v1/sites/',
 ```
 
-**RUNNING QUERIES AGAINST ACSF**
+**Running queries against ACSF (get list of users and their roles)**
 
 ```
 // php acsf-list-users.php  @drush-alias
