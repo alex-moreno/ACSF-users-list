@@ -10,10 +10,10 @@ composer install
 Add your secrets file. Rename secrets-sample.php and add your settings:
 
 ```
-    // URL of a subsection inside the SF REST API; must end with sites/.
-    'url' => '',
-    'api_user' => '',
-    'api_key' => '',
+// URL of a subsection inside the SF REST API; must end with sites/.
+'url' => '',
+'api_user' => '',
+'api_key' => '',
 ```
 
 url is something like:
