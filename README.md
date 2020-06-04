@@ -1,4 +1,8 @@
 
+**Requirements**
+
+At the moment it will work with Drupal 8 (and potentially Drupal 9) sites.
+
 **Installation**
 
 ```
