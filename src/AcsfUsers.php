@@ -149,13 +149,23 @@ class AcsfUsers
      */
     public function execDrushUserInfo($site_alias, $drush_alias)
     {
-        $result = exec("drush  $drush_alias  -l  $site_alias uinf \"$(drush   $drush_alias  -l  $site_alias sqlq \"SELECT GROUP_CONCAT(name) FROM users_field_data\")\"", $output, $return);
+        $result = exec("drush  $drush_alias  -l  $site_alias uinf --format=csv \"$(drush   $drush_alias  -l  $site_alias sqlq \"SELECT GROUP_CONCAT(name) FROM users_field_data\")\"", $output, $return);
         if (strpos($output[2], "Command user-information was not found. Drush was unable to query the database")) {
             echo "\nCould not query database in $site_alias \n ";
         } else {
             echo "\nUsers found in $site_alias \n";
+            echo "Result:: ";
             print_r($result);
+
+            echo "Output:: ";
             print_r($output);
+            // Prepare the csv file
+            $file = fopen("csv/" . $site_alias . ".csv", "w");
+            foreach ($output as $line) {
+                $lineArray = explode(",", $line);
+                print_r($lineArray);
+                fputcsv($file, $lineArray);
+            }
         }
     }
 }
