@@ -1,4 +1,8 @@
 
+**Requirements**
+
+At the moment it will work with Drupal 8 (and potentially Drupal 9) sites.
+
 **Installation**
 
 ```
@@ -10,16 +14,16 @@ composer install
 Add your secrets file. Rename secrets-sample.php and add your settings:
 
 ```
-    // URL of a subsection inside the SF REST API; must end with sites/.
-    'url' => '',
-    'api_user' => '',
-    'api_key' => '',
+// URL of a subsection inside the SF REST API; must end with sites/.
+'url' => '',
+'api_user' => '',
+'api_key' => '',
 ```
 
 url is something like:
 
 ```
-    'url' => 'https://www.dev-CUSTOMER.acsitefactory.com/api/v1/sites/',
+'url' => 'https://www.dev-CUSTOMER.acsitefactory.com/api/v1/sites/',
 ```
 
 **Running queries against ACSF (get list of users and their roles)**

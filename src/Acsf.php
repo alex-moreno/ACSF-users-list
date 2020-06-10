@@ -17,7 +17,7 @@ use \Exception as Exception;
 /**
  * Some methods to query ACSF
  */
-class AcsfUsers
+class ACSF
 {
     /**
      * The filename of the template to load.

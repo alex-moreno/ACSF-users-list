@@ -3,9 +3,9 @@
 
 require 'vendor/autoload.php';
 
-use ACSF\AcsfUsers;
+use ACSF\ACSF;
 
-$acsf = new AcsfUsers();
+$acsf = new ACSF();
 // Get list of sites.
 $list_sites = $acsf->getAllSites();
 
