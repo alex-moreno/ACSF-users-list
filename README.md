@@ -11,7 +11,7 @@ cd ACSF
 composer install
 ```
 
-Add your secrets file. Rename secrets-sample.php to secrets.php and add your settings:
+Add your secrets file. Rename secrets-sample.php to secrets.php and add your settings from Account Settings in yoursubscription.acsitefactory.com url:
 
 ```
 // URL of a subsection inside the SF REST API; must end with sites/.
@@ -20,7 +20,7 @@ Add your secrets file. Rename secrets-sample.php to secrets.php and add your set
 'api_key' => '',
 ```
 
-url is something like:
+url is the url of the factory for which you want to get the list. It shoudl be something like this:
 
 ```
 'url' => 'https://www.dev-CUSTOMER.acsitefactory.com/api/v1/sites/',
