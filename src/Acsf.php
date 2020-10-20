@@ -78,7 +78,7 @@ class ACSF
                 echo "Error whilst fetching site list!\n";
                 exit(1);
             }
-  
+
             $next_page_header = $res->getHeader('link');
             $response = json_decode($res->getBody()->getContents());
   
@@ -149,6 +149,12 @@ class ACSF
      */
     public function execDrushUserInfo($site_alias, $drush_alias)
     {
+        // Ensure csv folder exists.
+        if (!file_exists('csv')) {
+            echo "Creating csv folder.";
+            mkdir('csv', 0777, true);
+        }
+
         $result = exec("drush  $drush_alias  -l  $site_alias uinf --format=csv \"$(drush   $drush_alias  -l  $site_alias sqlq \"SELECT GROUP_CONCAT(name) FROM users_field_data\")\"", $output, $return);
         if (strpos($output[2], "Command user-information was not found. Drush was unable to query the database")) {
             echo "\nCould not query database in $site_alias \n ";

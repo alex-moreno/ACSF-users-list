@@ -1,6 +1,6 @@
 <?php
 $config = [
-    // URL of a subsection inside the SF REST API; must end with sites/.
+    // URL of a subsection inside the SF REST API; must end with sites/ (ie: https://www.site.acsitefactory.com/api/v1/sites/).
     'url' => '',
     'api_user' => '',
     'api_key' => '',
