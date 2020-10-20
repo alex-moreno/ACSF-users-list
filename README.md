@@ -11,7 +11,7 @@ cd ACSF
 composer install
 ```
 
-Add your secrets file. Rename secrets-sample.php and add your settings:
+Add your secrets file. Rename secrets-sample.php to secrets.php and add your settings:
 
 ```
 // URL of a subsection inside the SF REST API; must end with sites/.
