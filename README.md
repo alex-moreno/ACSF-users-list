@@ -32,3 +32,5 @@ url is something like:
 // php acsf-list-users.php  @drush-alias
 php acsf-list-users.php  @mysite.01dev
 ```
+
+Once finished the list of users will be written in the csv/ folder.
