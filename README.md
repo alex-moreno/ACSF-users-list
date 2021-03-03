@@ -1,4 +1,9 @@
 
+
+**What**
+
+Uses ACSF api to pull the list of sites and get the list of users on each site
+
 **Requirements**
 
 At the moment it will work with Drupal 8 (and potentially Drupal 9) sites.
